@@ -36,6 +36,10 @@ body::-webkit-scrollbar {
     
 }
 
+li {
+    margin-bottom: 15px;
+}
+
 /* geral inicio */
 .apresentacao {
     align-items: center;
@@ -55,71 +59,110 @@ body::-webkit-scrollbar {
     flex-direction: column;
     gap: 20px;
 }
-/* geral fim */
 
-/* pagina inical (inicio) */
-.menu__inicial {
-    justify-content: center;
+.inicial {
+    text-align: start;
+    margin: 0 auto;
     width: 100%;
-    font-family: var(--fonte-titulo);
-    font-size: 2rem;
-    color: var(--cor-texto);
-    gap: 50px;
-    flex-direction: column;
-}
-
-.menu__esportes {
+    min-height: 100vh;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    flex-direction: column;
     gap: 20px;
 
 }
 
-.menu__olimpiadas {
+.menu {
+    padding: 2%;
+}
+
+/* geral fim */
+
+/* pagina inical (inicio) */
+
+.menu__esportes {
+    width: 90vw;
+    height: 30vh;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 30%;
+    gap: 32px;
+}
+
+.menu__olimpiadas {
+    width: 90vw;
+    height: 30vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .icone__esportes {
-    width: 30%;
-    height: 30%;
-    text-decoration: none;
-    font-family: var(--fonte-titulo);
-    font-size: 2rem;
-    color: var(--cor-texto);
+    width: 30vw;
+    height: 30vh;
+    text-align: center;
     background-color: var(--cor-fundo);
-    padding: 2% 10%;
+    color: var(--cor-texto);
+    font-family: var(--fonte-titulo);
+    font-size: 2.5rem;
     border: black 2px solid;
     border-radius: 10px;
+}
+
+.icone__esportes:hover {
+    cursor: pointer;
+    transition: 0.7s;
+    width: 35vw;
+    height: 30vh;
+    align-items: center;
 }
 
 .icone__olimpiadas {
-
-    height: 30%;
-    width: 80%;
-    text-decoration: none;
-    font-family: var(--fonte-titulo);
-    font-size: 2rem;
-    color: var(--cor-texto);
+    width: 94.5vw;
+    height: 30vh;
+    text-align: center;
     background-color: var(--cor-fundo);
-    padding: 2% 10%;
+    color: var(--cor-texto);
+    font-family: var(--fonte-titulo);
+    font-size: 2.5rem;
     border: black 2px solid;
     border-radius: 10px;
 }
 
+.icone__olimpiadas:hover {
+    cursor: pointer;
+    transition: 0.7s;
+    width: 99vw;
+    height: 30vh;
+    padding: 2%;
+    align-items: center;
+}
+
+.pequeno {
+    font-size: 1rem;
+}
+
+.rodape__inicial {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-texto);
+    font-size: 0.7rem;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
 /* pagina inical (fim) */
+
+.escuro {
+    color:#000000;
+}
 
 .index__paginas {
     flex-direction: row;
     align-items: center;
     margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    gap: 10px;
+    padding-bottom: 50px;
 }
 
 .index {
@@ -128,8 +171,10 @@ body::-webkit-scrollbar {
     color: var(--cor-texto);
     font-size: 1.5rem;
     font-family: var(--fonte-titulo);
-    padding: 30px;
+    padding: 25px;
     margin: 0 auto;
+    padding-bottom: 30px;
+
 }
 
 .cabecalho {
@@ -154,7 +199,7 @@ body::-webkit-scrollbar {
     font-family: var(--fonte-titulo);
     text-align: justify;
     text-justify: inter-word;
-
+    text-align: center;
 }
 
 .apresentacao__conteudo__texto {
@@ -189,7 +234,7 @@ body::-webkit-scrollbar {
 .botao__rodape {
     width: 32px;
     object-fit: contain;
-    position: relative;
+    position: fixed;
     left: 2%;
     bottom: 2%;
 }
