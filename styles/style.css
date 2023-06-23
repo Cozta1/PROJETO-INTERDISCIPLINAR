@@ -85,7 +85,7 @@ li {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: 28px;
 }
 
 .menu__olimpiadas {
@@ -107,8 +107,10 @@ li {
     border: black 2px solid;
     border-radius: 10px;
     background-size: cover;
+    -webkit-text-stroke: 1px black;
 
 }
+
 
 .icone__esportes:hover {
     cursor: pointer;
@@ -159,6 +161,7 @@ li {
     width: 100%;
     text-align: center;
     gap: 10px;
+    margin: 0;
     padding-bottom: 50px;
 }
 
@@ -182,6 +185,7 @@ li {
     text-align: center;
     background-color: var(--cor-fundo);
     background-size: cover;
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
 }
 
 .botao__cabecalho {
@@ -191,6 +195,7 @@ li {
     left: 2%;
     top: 2%;
 }
+
 
 .apresentacao__conteudo__titulo {
     font-size: 2.25rem;
@@ -227,6 +232,7 @@ li {
 .rodape {
     align-items: start;
     padding: 5% 0 2% 0;
+
 }
 
 .botao__rodape {
@@ -235,6 +241,13 @@ li {
     position: fixed;
     left: 2%;
     bottom: 2%;
+}
+
+.botao__rodape:focus {
+    border: #f6f6f6 2px solid;
+    border-radius: 5px;
+    width: 32px;
+    height: 32px;
 }
 
 .imagens {
@@ -250,6 +263,9 @@ li {
     .index {
         font-size: 1.25rem;
     }
+
+
+
 }
 
 @media (max-width: 1024px) {
@@ -264,6 +280,27 @@ li {
     .index {
         font-size: 0.8rem;
         padding: 10px;
+    }
+
+    .icone__esportes {
+        font-size: 1.5rem;
+    }
+
+    .icone__olimpiadas {
+        font-size: 2rem;
+    }
+
+    .menu__esportes {
+        padding: 2%;
+        width: 35vw;
+        gap: 20px;
+    }
+    .pequeno {
+        opacity: 0;
+    }
+
+    span {
+        background-color: #ffffff;
     }
 }
 
@@ -295,4 +332,11 @@ li {
         padding: 20px;
     }
     
+    .icone__esportes {
+        font-size: 0.8rem;
+    }
+
+    .icone__olimpiadas {
+        font-size: 1.5rem;
+    }
 }
