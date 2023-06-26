@@ -129,6 +129,11 @@ li {
     border-radius: 10px;
     background-size:contain;
     background-repeat:space;
+
+}
+
+span{
+    background-color: #f6f6f6;
 }
 
 .icone__olimpiadas:hover {
